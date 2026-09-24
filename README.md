@@ -20,13 +20,6 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
-## Deploy (Streamlit Community Cloud)
-1. Push this folder to a GitHub repository.
-2. Go to https://share.streamlit.io and sign in with GitHub.
-3. Click "New app" → select the repo, branch `main`, and `app.py`.
-4. Click "Deploy". You'll get a public `*.streamlit.app` link.
-5. Any future `git push` auto-redeploys.
-
 ## Model Notes
 - Final model: Logistic Regression, `class_weight='balanced'`, tuned via GridSearchCV (best C and solver).
 - Uses 10 categorical + 15 numeric claim features (vs. the original 10-categorical-only version).
